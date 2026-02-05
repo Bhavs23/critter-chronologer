@@ -161,7 +161,7 @@ critter-chronologer/
 ## How to Run
 
 ### Prerequisites
-- Java JDK 11 or higher
+- Java JDK 17 or higher
 - Maven 3.6+
 - IntelliJ IDEA (recommended)
 
