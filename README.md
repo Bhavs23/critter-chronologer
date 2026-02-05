@@ -30,28 +30,103 @@ The goal was to design and implement a multi-tiered backend application that dem
 - DTO-based request/response handling
 
 ## Project Structure
+
 ```
 critter-chronologer/
+│
 ├── README.md
 ├── .gitignore
+│
 ├── documentation/
 │   ├── Critter Chronologer Project Documentation.docx
 │   └── images/
-│       ├── entity-diagram.png
-│       ├── postman-test.png
-│       └── database-schema.png
+│       ├── mysql-setup.png
+│       ├── application-properties-main.png
+│       ├── application-properties-main-2.png
+│       ├── application-properties-test.png
+│       ├── customer-entity.png
+│       ├── pet-entity.png
+│       ├── employee-entity.png
+│       ├── schedule-entity.png
+│       ├── customer-repository.png
+│       ├── customer-repository-2.png
+│       ├── pet-repository.png
+│       ├── employee-repository.png
+│       ├── schedule-repository.png
+│       ├── customer-service.png
+│       ├── pet-service.png
+│       ├── employee-service.png
+│       ├── schedule-service.png
+│       ├── user-controller.png
+│       ├── pet-controller.png
+│       ├── schedule-controller.png
+│       ├── unit-tests.png
+│       ├── postman-testing.png
+│       ├── postman-testing-2.png
+│       ├── postman-testing-3.png
+│       ├── postman-testing-4.png
+│       ├── postman-testing-5.png
+│       ├── database-verification.png
+│       ├── database-verification-2.png
+│       └── database-verification-3.png
+│
 └── critter/
     ├── pom.xml
+    │
     └── src/
         ├── main/
-        │   ├── java/com/udacity/jdnd/course3/critter/
-        │   │   ├── pet/
-        │   │   ├── schedule/
-        │   │   └── user/
+        │   ├── java/
+        │   │   └── com/
+        │   │       └── udacity/
+        │   │           └── jdnd/
+        │   │               └── course3/
+        │   │                   └── critter/
+        │   │                       ├── CritterApplication.java
+        │   │                       ├── CritterController.java
+        │   │                       │
+        │   │                       ├── pet/
+        │   │                       │   ├── Pet.java
+        │   │                       │   ├── PetController.java
+        │   │                       │   ├── PetDTO.java
+        │   │                       │   ├── PetRepository.java
+        │   │                       │   ├── PetService.java
+        │   │                       │   └── PetType.java
+        │   │                       │
+        │   │                       ├── schedule/
+        │   │                       │   ├── Schedule.java
+        │   │                       │   ├── ScheduleController.java
+        │   │                       │   ├── ScheduleDTO.java
+        │   │                       │   ├── ScheduleRepository.java
+        │   │                       │   └── ScheduleService.java
+        │   │                       │
+        │   │                       └── user/
+        │   │                           ├── Customer.java
+        │   │                           ├── CustomerDTO.java
+        │   │                           ├── CustomerRepository.java
+        │   │                           ├── CustomerService.java
+        │   │                           ├── Employee.java
+        │   │                           ├── EmployeeDTO.java
+        │   │                           ├── EmployeeRepository.java
+        │   │                           ├── EmployeeRequestDTO.java
+        │   │                           ├── EmployeeService.java
+        │   │                           ├── EmployeeSkill.java
+        │   │                           └── UserController.java
+        │   │
         │   └── resources/
         │       ├── application.properties
         │       └── Udacity.postman_collection.json
+        │
         └── test/
+            ├── java/
+            │   └── com/
+            │       └── udacity/
+            │           └── jdnd/
+            │               └── course3/
+            │                   └── critter/
+            │                       └── CritterFunctionalTest.java
+            │
+            └── resources/
+                └── application.properties
 ```
 
 ## Entity Relationships
